@@ -71,6 +71,10 @@ var initApp = function(){
 
     calcMeanButton.addEventListener("click",calcStats);
     
+    var calcMaxButton = document.querySelector("#start2");
+
+    calcMaxButton.addEventListener("click",calcStats);
+    
     
 }
 };
