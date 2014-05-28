@@ -16,6 +16,9 @@ var initInputElements = function(){
         inputElements.push(elm); // elm を inputElements に追加
         i = i + 1;
     }
+　　
+    }
+    
 };
 
 /**
@@ -39,10 +42,24 @@ var calcMean = function(){
     if(n > 0){
         outputMean.textContent = sum / n;
     }
+    
 };
 
+var calcMax = function(){
+    var index = 0;
+    var n = 0;
+
+   while(index < inputElements.length){
+        var input = inputElements[index];
+        var number = Number(input.value); 
+
+}
+
+
 var calcStats = function(){
+    
     calcMean();
+    }
 };
 
 var initApp = function(){
@@ -50,8 +67,12 @@ var initApp = function(){
 
     outputMean = document.querySelector("#mean");
 
-    var calcMeanButton = document.querySelector("#start");
-    calcMeanButton.addEventListener("click", calcStats);
+    var calcMeanButton = document.querySelector("#start1");
+
+    calcMeanButton.addEventListener("click",calcStats);
+    
+    
+}
 };
 
 initApp();
